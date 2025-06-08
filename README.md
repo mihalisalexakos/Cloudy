@@ -1,8 +1,10 @@
 ![Untitled_Artwork](https://github.com/user-attachments/assets/6b7e40c3-bcac-4826-b0ea-2395fd23deb4)  <h1>Cloudy</h1>
 
-
+<h3>Macos app made with electron</h3>
 Didnt want to use finder to locate and open my projects, so Cloudy to the resque :)
 <img width="500" alt="Screenshot 2025-06-09 at 02 27 41" src="https://github.com/user-attachments/assets/04c6d0d2-17d1-4bb6-bfeb-bc7360e0d646" />
+
+
 
 Select a folder, and view all projects in the location, with 2 options for each project: <br>1) Open in your default browser(prefers your index.html if there is one)<br>2) Open the project folder in VScode
 <br>

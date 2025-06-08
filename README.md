@@ -1,4 +1,4 @@
-<span>![Untitled_Artwork](https://github.com/user-attachments/assets/6b7e40c3-bcac-4826-b0ea-2395fd23deb4)  <h1>Cloudy</h1></span>
+![Untitled_Artwork](https://github.com/user-attachments/assets/6b7e40c3-bcac-4826-b0ea-2395fd23deb4)  <h1>Cloudy</h1>
 
 
 Didnt want to use finder to locate and open my projects, so Cloudy to the resque :)

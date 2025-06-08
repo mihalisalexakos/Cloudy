@@ -1,4 +1,5 @@
-#Cloudy ![Untitled_Artwork](https://github.com/user-attachments/assets/6b7e40c3-bcac-4826-b0ea-2395fd23deb4)  
+![Untitled_Artwork](https://github.com/user-attachments/assets/6b7e40c3-bcac-4826-b0ea-2395fd23deb4)  
+#Cloudy
 
 Didnt want to use finder to locate and open my projects, so Cloudy to the resque :)
 <img width="500" alt="Screenshot 2025-06-09 at 02 27 41" src="https://github.com/user-attachments/assets/04c6d0d2-17d1-4bb6-bfeb-bc7360e0d646" />

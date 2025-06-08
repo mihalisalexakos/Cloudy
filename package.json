@@ -1,0 +1,24 @@
+{
+    "name": "cloudy",
+    "productName": "Cloudy",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^25.0.0",
+        "electron-builder": "^26.0.12"
+    },
+    "scripts": {
+        "start": "electron .",
+        "dist": "electron-builder --mac"
+    },
+    "build": {
+        "appId": "com.yourname.projectmanager",
+        "mac": {
+            "category": "public.app-category.developer-tools",
+            "icon": "build/cloudy.icns"
+        },
+        "directories": {
+            "output": "dist"
+        }
+    }
+}

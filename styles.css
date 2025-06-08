@@ -1,0 +1,232 @@
+:root {
+    --bg: rgb(19, 21, 27);
+    --elem: rgb(40, 52, 86);
+    --disabled-elem: rgb(59, 64, 78);
+    --elem-light: rgb(58, 76, 125);
+    --text: rgb(225, 225, 234);
+    --subtext: rgb(162, 162, 198);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: var(--bg);
+    width: 100vw;
+    overflow-y: auto;
+    background-image: url('/Users/mihalisalexakos/Desktop/Other/WALLPAPERS/342457.png');
+    background-size: cover;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 10px;
+    background: var(--bg);
+    border-bottom: 2px solid var(--elem);
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+header button {
+    margin-right: 15px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    width: 80vw;
+    min-width: 600px;
+    height: fit-content;
+    max-height: 70vh;
+
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--elem);
+    backdrop-filter: blur(5px);
+    transition: 0.2s;
+
+    overflow-y: auto;
+}
+
+#grid.empty {
+    height: 0;
+    backdrop-filter: blur(0px);
+    border: none;
+    transition: 0.2s;
+}
+
+input#search {
+    display: block;
+    width: 80vw;
+    outline: none;
+    padding: 10px;
+    background-color: var(--bg);
+    border: 2px solid var(--elem);
+    border-radius: 20px;
+    transition: 0.2s;
+    color: var(--text);
+}
+
+input#search::placeholder{
+    color: var(--subtext);
+}
+
+input#search:focus {
+    outline: none;
+    border: 2px solid var(--elem-light);
+    transition: 0.2s;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+
+}
+
+.title {
+    width: 100%;
+}
+
+.card {
+    padding: 15px;
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    background-color: var(--bg);
+    border: 2px solid var(--elem);
+    color: var(--text);
+
+    max-height: fit-content;
+    gap: 10px;
+
+}
+
+#current-folder {
+    color: var(--subtext);
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--elem);
+    color: var(--text);
+    transition: 0.2s;
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+button:hover {
+    background-color: var(--elem-light);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+dialog {
+    background-color: var(--bg);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--elem);
+
+    color: var(--text);
+
+}
+
+
+
+dialog menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+
+}
+
+dialog h3 {
+    margin-bottom: 20px;
+}
+
+.card h3{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tag{
+    font-size: 10px;
+    color: var(--subtext);
+    padding: 2px 5px;
+    background-color: var(--elem);
+    border-radius: 5px;
+}
+
+/* scrollbar styling */
+/* WebKit */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--elem-light);
+    border-radius: 5px;
+    border: 2px solid var(--elem);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--elem-light) var(--elem);
+}
+
+button:disabled {
+    cursor: default;
+    background-color: var(--disabled-elem);
+}
+
+button:disabled:hover {
+    background-color: var(--disabled-elem);
+}

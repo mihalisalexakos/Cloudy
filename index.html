@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Project Manager</title>
+</head>
+
+<body>
+    <header>
+        <button id="choose-folder">Import<i class="fa-solid fa-file-import"></i></button>
+        <button id="create-folder">Add<i class="fa-solid fa-folder-plus"></i></button>
+        <span id="current-folder"></span>
+    </header>
+    <main>
+        <input id="search" type="search" placeholder="Search projects…"/>
+        <div id="grid"></div>
+    </main>
+    <dialog id="new-project-dialog">
+        <form method="dialog">
+            <h3>Create a new project</h3>
+            <label>Project name: <input id="new-project-name" required /></label>
+            <menu>
+                <button id="cancel-new-project">Cancel</button>
+                <button id="confirm-new-project" type="submit">Create</button>
+            </menu>
+        </form>
+    </dialog>
+    <script src="renderer.js"></script>
+</body>
+
+</html>
